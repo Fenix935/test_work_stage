@@ -6,8 +6,9 @@ import Container from "@mui/material/Container";
 import {Navigate, Route, Routes } from "react-router";
 import Router from "../../router";
 import Club from "../club/Club";
-import {linkList} from "../../App";
 import Navigation from "../../store/navigation";
+import { linkList } from '../../store/const';
+
 
 const Header = () => {
     let location = useLocation();

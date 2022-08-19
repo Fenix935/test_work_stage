@@ -1,10 +1,6 @@
 import React, {ReactElement} from 'react';
 import {Navigate, Route, Routes } from "react-router";
-
-interface IRotesList {
-    elem: ReactElement;
-    path: string;
-}
+import {IRotesList} from "./types";
 
 interface IProps {
     routesList: Array<IRotesList>

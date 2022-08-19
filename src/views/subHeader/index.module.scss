@@ -1,11 +1,16 @@
 .header{
     width: 100%;
-    padding: 30px 0;
+    height: 0;
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #82a7c2;
+    transition: 0.3s;
 
+    &.active{
+        height: 90px;
+    }
 
     p{
         color: #fff;
