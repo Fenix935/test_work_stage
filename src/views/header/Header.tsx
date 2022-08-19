@@ -1,41 +1,36 @@
-import React from 'react';
-import "./header.scss";
-
+import React, {useEffect} from 'react';
+import styles from "./index.module.scss";
+import {Link, useLocation} from "react-router-dom";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
-import Link from '@mui/material/Link';
 import {Navigate, Route, Routes } from "react-router";
+import Router from "../../router";
+import Club from "../club/Club";
+import {linkList} from "../../App";
+import Navigation from "../../store/navigation";
 
 const Header = () => {
+    let location = useLocation();
+    console.log(location)
+
+    useEffect(() => {
+        if(location.pathname){
+            Navigation.changePath(location.pathname);
+        }
+    }, [location])
+
     return (
-        <>
-            <Container maxWidth="xl">
-                <Box className="some">
-                    <div>some</div>
-                    <Link
-                        href="#"
-                        underline="none"
-                        sx={{
-                            marginRight: "20px"
-                        }}
-                    >
-                        Club Menu
-                    </Link>
-                    <Link
-                        href="#"
-                        underline="none"
-                    >
-                        Club Menu
-                    </Link>
-                    <Link
-                        href="#"
-                        underline="none"
-                    >
-                        Club Menu
-                    </Link>
-                </Box>
-            </Container>
-        </>
+        <div className="container">
+            <Box className={styles.header}>
+                {linkList.map((item, i) => {
+                    if(item.name){
+                        return(
+                            <Link key={i} to={item.path}>{item.name}</Link>
+                        )
+                    }
+                })}
+            </Box>
+        </div>
     );
 };
 
