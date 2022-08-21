@@ -3,7 +3,6 @@ import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
 import ClubObject from "../../store/clubStore";
-import styles from "./index.module.scss";
 import {toast, ToastContainer} from "react-toastify";
 
 const Modify = () => {
@@ -27,7 +26,6 @@ const Modify = () => {
         if(searchMode){
             let data = ClubObject.clubLists.find(item => item.name === formObj.search);
             setClick(true);
-            console.log(data)
             if(data){
                 setFindedClub(data)
                 setSearchMode(false);
@@ -125,7 +123,7 @@ const Modify = () => {
 
                 <>
                     {(clickFind && (Object.values(findedClub).length === 0)) &&
-                            <div>{`No such club with name --> ${notFoundText}`}</div>
+                        <div>{`No such club with name --> ${notFoundText}`}</div>
                     }
                 </>
             </Box>

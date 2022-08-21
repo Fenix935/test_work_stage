@@ -1,5 +1,5 @@
-import React, {ReactElement} from 'react';
-import {Navigate, Route, Routes } from "react-router";
+import React from 'react';
+import {Route, Routes} from "react-router";
 import {IRotesList} from "./types";
 
 interface IProps {

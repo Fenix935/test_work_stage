@@ -1,7 +1,7 @@
 import {makeAutoObservable} from "mobx";
 
 class SubHeaderActive {
-    activeIndex:number = 4;
+    activeIndex:number = 0;
 
     constructor () {
         makeAutoObservable(this)

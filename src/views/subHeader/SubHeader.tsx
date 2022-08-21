@@ -1,8 +1,8 @@
-import React, {useState} from 'react';
+import React from 'react';
 import styles from "./index.module.scss";
 import Box from "@mui/material/Box";
 import SubHeaderActive from "../../store/subHeaderActive";
-import { observer } from 'mobx-react-lite';
+import {observer} from 'mobx-react-lite';
 
 interface IProps {
     nameList: Array<string>,

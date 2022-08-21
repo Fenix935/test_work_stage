@@ -1,6 +1,5 @@
 import {makeAutoObservable} from "mobx";
-import {IClubDataList, IMemberDataList} from "../types";
-import moment from "moment";
+import {IMemberDataList} from "../types";
 
 class MemberObject {
     memberLists:Array<IMemberDataList> = [{

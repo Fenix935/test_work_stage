@@ -2,17 +2,12 @@ import React, {useEffect} from 'react';
 import styles from "./index.module.scss";
 import {Link, useLocation} from "react-router-dom";
 import Box from "@mui/material/Box";
-import Container from "@mui/material/Container";
-import {Navigate, Route, Routes } from "react-router";
-import Router from "../../router";
-import Club from "../club/Club";
 import Navigation from "../../store/navigation";
-import { linkList } from '../../store/const';
+import {linkList} from '../../store/const';
 
 
 const Header = () => {
     let location = useLocation();
-    // console.log(location)
 
     useEffect(() => {
         if(location.pathname){

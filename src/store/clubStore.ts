@@ -8,7 +8,7 @@ class ClubObject {
         membershipList: [],
         foundationDay: "2022-08-14",
         usid: "1",
-        intro: "asdasdqwewqezxczxcasda sad"
+        intro: "asdasdqwewqezxczxcasda"
     }]
 
     constructor () {
@@ -28,13 +28,10 @@ class ClubObject {
             clubData.name = data.name;
             clubData.intro = data.intro;
         }
-
-        console.log(this.clubLists)
     }
 
     deleteNote (id:string) {
         this.clubLists = this.clubLists.filter(item => item.usid !== id);
-        console.log(this.clubLists)
     }
 }
 

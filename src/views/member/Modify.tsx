@@ -3,9 +3,7 @@ import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
 import MemberObject from "../../store/memberStore";
-import styles from "./index.module.scss";
 import {toast, ToastContainer} from "react-toastify";
-import {IMemberDataList} from "../../types";
 
 const Modify = () => {
     interface IForm{
