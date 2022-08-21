@@ -17,6 +17,13 @@
         font-size: 22px;
         text-transform: uppercase;
         margin-right: 40px;
+        font-weight: 500;
+        transition: 0.3s;
+        cursor: pointer;
+
+        &.active{
+            color: #5D5C60;
+        }
 
         &:last-child{
             margin-right: 0;

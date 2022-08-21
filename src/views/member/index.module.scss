@@ -1,0 +1,30 @@
+.list_block{
+    width: 100%;
+    margin-bottom: 30px;
+
+
+    .list_title{
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 15px;
+        color: #938E93;
+        text-transform: uppercase;
+    }
+
+    .text{
+        padding-left: 35px;
+        font-size: 18px;
+        position: relative;
+
+        &:after{
+            content: "";
+            width: 20px;
+            height: 1px;
+            background-color: #000;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 5px;
+        }
+    }
+}

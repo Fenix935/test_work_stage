@@ -1,6 +1,7 @@
 import {IRotesList, ISubHeaderList} from "../types";
 import Club from "../views/club/Club";
 import React from "react";
+import Member from "../views/member/Member";
 
 export const linkList: Array<IRotesList> = [
     {
@@ -10,17 +11,12 @@ export const linkList: Array<IRotesList> = [
     },
     {
         name: "Members Menu",
-        elem: <Club />,
-        path: "/club"
-    },
-    {
-        name: "Board Menu",
-        elem: <Club />,
-        path: "/club"
+        elem: <Member />,
+        path: "/member"
     }
 ]
 
 export const subHeaderLinks: ISubHeaderList = {
     "/club": ["Register", "Find", "Modify", "Remove", "Membership Menu"],
-    "/member": ["test"]
+    "/member": ["Register", "Find", "Modify", "Remove"]
 }

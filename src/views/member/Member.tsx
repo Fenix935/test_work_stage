@@ -7,17 +7,15 @@ import SubHeaderActive from "../../store/subHeaderActive";
 import Typography from '@mui/material/Typography';
 import Modify from "./Modify";
 import Remove from "./Remove";
-import MemberShip from "./MemberShip";
 
 
-const Club = observer(() => {
+const Member = observer(() => {
 
     let componentsArray:Array<ReactElement> = [
         <Register />,
         <Find />,
         <Modify />,
-        <Remove />,
-        <MemberShip />
+        <Remove />
     ]
 
     return (
@@ -33,4 +31,4 @@ const Club = observer(() => {
     );
 });
 
-export default Club;
+export default Member;

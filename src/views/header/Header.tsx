@@ -12,7 +12,7 @@ import { linkList } from '../../store/const';
 
 const Header = () => {
     let location = useLocation();
-    console.log(location)
+    // console.log(location)
 
     useEffect(() => {
         if(location.pathname){
